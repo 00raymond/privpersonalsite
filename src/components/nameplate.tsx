@@ -1,5 +1,5 @@
 import me from "@/assets/me.jpg";
-// import resume from "@/assets/Raymond_House_resume.pdf";
+import resume from "@/assets/Raymond_House_resume.pdf";
 import Image from "next/image";
 
 export const Nameplate = () => {
@@ -17,14 +17,14 @@ export const Nameplate = () => {
                             <p>software developer</p>
                             <p>uc irvine 2025</p>
                         </div>
-                        {/*<a*/}
-                        {/*    href={resume} target="_blank" rel="noopener noreferrer"*/}
-                        {/*    className={"hover:bg-slate-900 transition-all duration-200 items-center justify-center text-2xl mt-1 flex space-x-1 bg-black bg-opacity-25 border-2 border-slate-800 p-0.5 pt-0 pl-4 pr-4 rounded-xl"}>*/}
-                        {/*    <p>resume</p>*/}
-                        {/*    <svg className="mt-1.5 w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">*/}
-                        {/*        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 14v4.833A1.166 1.166 0 0 1 16.833 20H5.167A1.167 1.167 0 0 1 4 18.833V7.167A1.166 1.166 0 0 1 5.167 6h4.618m4.447-2H20v5.768m-7.889 2.121 7.778-7.778"/>*/}
-                        {/*    </svg>*/}
-                        {/*</a>*/}
+                        <a
+                            href={resume} target="_blank" rel="noopener noreferrer"
+                            className={"hover:bg-slate-900 transition-all duration-200 items-center justify-center text-2xl mt-1 flex space-x-1 bg-black bg-opacity-25 border-2 border-slate-800 p-0.5 pt-0 pl-4 pr-4 rounded-xl"}>
+                            <p>resume</p>
+                            <svg className="mt-1.5 w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 14v4.833A1.166 1.166 0 0 1 16.833 20H5.167A1.167 1.167 0 0 1 4 18.833V7.167A1.166 1.166 0 0 1 5.167 6h4.618m4.447-2H20v5.768m-7.889 2.121 7.778-7.778"/>
+                            </svg>
+                        </a>
                         <div className={"flex items-center justify-center space-x-2 mt-1"}>
                             <a href="https://github.com/00raymond" target="_blank" rel="noopener noreferrer">
                                 <svg className="w-12 h-12 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">

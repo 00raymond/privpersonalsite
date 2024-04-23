@@ -57,7 +57,9 @@ export const SlidingTabBar: React.FC<SlidingTabBarProps> = ({ activeTabIndex, se
                 return (
                     <button
                         key={index}
-                        ref={(el) => (tabsRef.current[index] = el)}
+                        ref={(el) => {
+                            tabsRef.current[index] = el;
+                        }}
                         className={`${
                             isActive ? `` : `hover:text-neutral-300`
                         } my-auto cursor-pointer select-none rounded-full px-4 text-center font-medium text-white`}
