@@ -1,5 +1,3 @@
-import '@/components/pagestyles.css'
-
 export const Experience = () => {
     return (
         <div className=" to-slate-950 rounded-xl border border-slate-800 bg-gradient-to-r from-slate-900 px-8 py-10 shadow-2xl text-left max-w-4xl w-full max-h-[700px] overflow-y-auto">

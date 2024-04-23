@@ -1,11 +1,11 @@
-import interpreter1 from '../assets/projects/interpreter1.png';
-import interpreter2 from '../assets/projects/interpreter2.png';
-import flexecute1 from '../assets/projects/flexecute1.png';
-import wpmapp1 from '../assets/projects/wpmapp1.png';
-import wpmapp2 from '../assets/wpmapp2.png';
-import personal1 from '../assets/projects/personal1.png'
-import './pagestyles.css';
+import interpreter1 from '@/assets/projects/interpreter1.png';
+import interpreter2 from '@/assets/projects/interpreter2.png';
+import flexecute1 from '@/assets/projects/flexecute1.png';
+import wpmapp1 from '@/assets/projects/wpmapp1.png';
+import wpmapp2 from '@/assets/wpmapp2.png';
+import personal1 from '@/assets/projects/personal1.png'
 import {useState} from "react";
+import Image from "next/image";
 
 export const Projects = () => {
 
@@ -31,11 +31,11 @@ export const Projects = () => {
                                 onMouseEnter={() => handleHover("wpmapp")}
                                 onMouseLeave={() => handleLeave()}
                             >
-                                <Image src={wpmapp1} alt="wpmapp1"  className={`${hovering === "wpmapp" ? 'scale-105 opacity-50' : 'scale-100 opacity-100'} h-60 transition-all duration-200  w-80 rounded-xl shadow-lg border-2 border-slate-800 `}/>
+                                <Image src={wpmapp1} alt={"wpmapp image"} className={`${hovering === "wpmapp" ? 'scale-105 opacity-50' : 'scale-100 opacity-100'} h-60 transition-all duration-200  w-80 rounded-xl shadow-lg border-2 border-slate-800 `} />
                                 <div className={"absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-200"}>
-                                    <svg className="w-24 h-24 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
-                                        <path fill-rule="evenodd" d="M12.006 2a9.847 9.847 0 0 0-6.484 2.44 10.32 10.32 0 0 0-3.393 6.17 10.48 10.48 0 0 0 1.317 6.955 10.045 10.045 0 0 0 5.4 4.418c.504.095.683-.223.683-.494 0-.245-.01-1.052-.014-1.908-2.78.62-3.366-1.21-3.366-1.21a2.711 2.711 0 0 0-1.11-1.5c-.907-.637.07-.621.07-.621.317.044.62.163.885.346.266.183.487.426.647.71.135.253.318.476.538.655a2.079 2.079 0 0 0 2.37.196c.045-.52.27-1.006.635-1.37-2.219-.259-4.554-1.138-4.554-5.07a4.022 4.022 0 0 1 1.031-2.75 3.77 3.77 0 0 1 .096-2.713s.839-.275 2.749 1.05a9.26 9.26 0 0 1 5.004 0c1.906-1.325 2.74-1.05 2.74-1.05.37.858.406 1.828.101 2.713a4.017 4.017 0 0 1 1.029 2.75c0 3.939-2.339 4.805-4.564 5.058a2.471 2.471 0 0 1 .679 1.897c0 1.372-.012 2.477-.012 2.814 0 .272.18.592.687.492a10.05 10.05 0 0 0 5.388-4.421 10.473 10.473 0 0 0 1.313-6.948 10.32 10.32 0 0 0-3.39-6.165A9.847 9.847 0 0 0 12.007 2Z" clip-rule="evenodd"/>
-                                    </svg>
+                                <svg className="w-24 h-24 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                                    <path fill-rule="evenodd" d="M12.006 2a9.847 9.847 0 0 0-6.484 2.44 10.32 10.32 0 0 0-3.393 6.17 10.48 10.48 0 0 0 1.317 6.955 10.045 10.045 0 0 0 5.4 4.418c.504.095.683-.223.683-.494 0-.245-.01-1.052-.014-1.908-2.78.62-3.366-1.21-3.366-1.21a2.711 2.711 0 0 0-1.11-1.5c-.907-.637.07-.621.07-.621.317.044.62.163.885.346.266.183.487.426.647.71.135.253.318.476.538.655a2.079 2.079 0 0 0 2.37.196c.045-.52.27-1.006.635-1.37-2.219-.259-4.554-1.138-4.554-5.07a4.022 4.022 0 0 1 1.031-2.75 3.77 3.77 0 0 1 .096-2.713s.839-.275 2.749 1.05a9.26 9.26 0 0 1 5.004 0c1.906-1.325 2.74-1.05 2.74-1.05.37.858.406 1.828.101 2.713a4.017 4.017 0 0 1 1.029 2.75c0 3.939-2.339 4.805-4.564 5.058a2.471 2.471 0 0 1 .679 1.897c0 1.372-.012 2.477-.012 2.814 0 .272.18.592.687.492a10.05 10.05 0 0 0 5.388-4.421 10.473 10.473 0 0 0 1.313-6.948 10.32 10.32 0 0 0-3.39-6.165A9.847 9.847 0 0 0 12.007 2Z" clip-rule="evenodd"/>
+                                </svg>
                                 </div>
                             </div>
                             <p className={"font-bold mt-2"}>RapidLabs Speed Coding</p>
@@ -52,7 +52,7 @@ export const Projects = () => {
                                  onMouseEnter={() => handleHover("interpreter")}
                                  onMouseLeave={() => handleLeave()}
                             >
-                                <img src={interpreter1} alt="interpreter1"  className={`${hovering == "interpreter" ? 'scale-105 opacity-50' : 'scale-100 opacity-100'} transition-all duration-200  h-60 w-80 rounded-xl shadow-lg border-2 border-slate-800 `}/>
+                                <Image src={interpreter1} alt="interpreter1"  className={`${hovering == "interpreter" ? 'scale-105 opacity-50' : 'scale-100 opacity-100'} transition-all duration-200  h-60 w-80 rounded-xl shadow-lg border-2 border-slate-800 `}/>
                                 <div className={"absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-200"}>
                                     <svg className="w-24 h-24 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
                                         <path fill-rule="evenodd" d="M12.006 2a9.847 9.847 0 0 0-6.484 2.44 10.32 10.32 0 0 0-3.393 6.17 10.48 10.48 0 0 0 1.317 6.955 10.045 10.045 0 0 0 5.4 4.418c.504.095.683-.223.683-.494 0-.245-.01-1.052-.014-1.908-2.78.62-3.366-1.21-3.366-1.21a2.711 2.711 0 0 0-1.11-1.5c-.907-.637.07-.621.07-.621.317.044.62.163.885.346.266.183.487.426.647.71.135.253.318.476.538.655a2.079 2.079 0 0 0 2.37.196c.045-.52.27-1.006.635-1.37-2.219-.259-4.554-1.138-4.554-5.07a4.022 4.022 0 0 1 1.031-2.75 3.77 3.77 0 0 1 .096-2.713s.839-.275 2.749 1.05a9.26 9.26 0 0 1 5.004 0c1.906-1.325 2.74-1.05 2.74-1.05.37.858.406 1.828.101 2.713a4.017 4.017 0 0 1 1.029 2.75c0 3.939-2.339 4.805-4.564 5.058a2.471 2.471 0 0 1 .679 1.897c0 1.372-.012 2.477-.012 2.814 0 .272.18.592.687.492a10.05 10.05 0 0 0 5.388-4.421 10.473 10.473 0 0 0 1.313-6.948 10.32 10.32 0 0 0-3.39-6.165A9.847 9.847 0 0 0 12.007 2Z" clip-rule="evenodd"/>
@@ -73,7 +73,7 @@ export const Projects = () => {
                                  onMouseEnter={() => handleHover("flexecute")}
                                  onMouseLeave={() => handleLeave()}
                             >
-                                <img src={flexecute1} alt="flexecute"  className={`${hovering === "flexecute" ? 'scale-105 opacity-50' : 'scale-100 opacity-100'} transition-all duration-200  w-80 h-60 rounded-xl shadow-lg border-2 border-slate-800 `}/>
+                                <Image src={flexecute1} alt="flexecute"  className={`${hovering === "flexecute" ? 'scale-105 opacity-50' : 'scale-100 opacity-100'} transition-all duration-200  w-80 h-60 rounded-xl shadow-lg border-2 border-slate-800 `}/>
                                 <div className={"absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-200"}>
                                     <svg className="w-24 h-24 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
                                         <path fill-rule="evenodd" d="M12.006 2a9.847 9.847 0 0 0-6.484 2.44 10.32 10.32 0 0 0-3.393 6.17 10.48 10.48 0 0 0 1.317 6.955 10.045 10.045 0 0 0 5.4 4.418c.504.095.683-.223.683-.494 0-.245-.01-1.052-.014-1.908-2.78.62-3.366-1.21-3.366-1.21a2.711 2.711 0 0 0-1.11-1.5c-.907-.637.07-.621.07-.621.317.044.62.163.885.346.266.183.487.426.647.71.135.253.318.476.538.655a2.079 2.079 0 0 0 2.37.196c.045-.52.27-1.006.635-1.37-2.219-.259-4.554-1.138-4.554-5.07a4.022 4.022 0 0 1 1.031-2.75 3.77 3.77 0 0 1 .096-2.713s.839-.275 2.749 1.05a9.26 9.26 0 0 1 5.004 0c1.906-1.325 2.74-1.05 2.74-1.05.37.858.406 1.828.101 2.713a4.017 4.017 0 0 1 1.029 2.75c0 3.939-2.339 4.805-4.564 5.058a2.471 2.471 0 0 1 .679 1.897c0 1.372-.012 2.477-.012 2.814 0 .272.18.592.687.492a10.05 10.05 0 0 0 5.388-4.421 10.473 10.473 0 0 0 1.313-6.948 10.32 10.32 0 0 0-3.39-6.165A9.847 9.847 0 0 0 12.007 2Z" clip-rule="evenodd"/>
@@ -94,7 +94,7 @@ export const Projects = () => {
                                  onMouseEnter={() => handleHover("website")}
                                  onMouseLeave={() => handleLeave()}
                             >
-                                <img src={personal1} alt="website1"  className={`${hovering === "website" ? 'scale-105 opacity-50' : 'scale-100 opacity-100'} transition-all duration-200  w-80 h-60 rounded-xl shadow-lg border-2 border-slate-800 `}/>
+                                <Image src={personal1} alt="website1"  className={`${hovering === "website" ? 'scale-105 opacity-50' : 'scale-100 opacity-100'} transition-all duration-200  w-80 h-60 rounded-xl shadow-lg border-2 border-slate-800 `}/>
                                 <div className={"absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-200"}>
                                     <svg className="w-24 h-24 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
                                         <path fill-rule="evenodd" d="M12.006 2a9.847 9.847 0 0 0-6.484 2.44 10.32 10.32 0 0 0-3.393 6.17 10.48 10.48 0 0 0 1.317 6.955 10.045 10.045 0 0 0 5.4 4.418c.504.095.683-.223.683-.494 0-.245-.01-1.052-.014-1.908-2.78.62-3.366-1.21-3.366-1.21a2.711 2.711 0 0 0-1.11-1.5c-.907-.637.07-.621.07-.621.317.044.62.163.885.346.266.183.487.426.647.71.135.253.318.476.538.655a2.079 2.079 0 0 0 2.37.196c.045-.52.27-1.006.635-1.37-2.219-.259-4.554-1.138-4.554-5.07a4.022 4.022 0 0 1 1.031-2.75 3.77 3.77 0 0 1 .096-2.713s.839-.275 2.749 1.05a9.26 9.26 0 0 1 5.004 0c1.906-1.325 2.74-1.05 2.74-1.05.37.858.406 1.828.101 2.713a4.017 4.017 0 0 1 1.029 2.75c0 3.939-2.339 4.805-4.564 5.058a2.471 2.471 0 0 1 .679 1.897c0 1.372-.012 2.477-.012 2.814 0 .272.18.592.687.492a10.05 10.05 0 0 0 5.388-4.421 10.473 10.473 0 0 0 1.313-6.948 10.32 10.32 0 0 0-3.39-6.165A9.847 9.847 0 0 0 12.007 2Z" clip-rule="evenodd"/>
