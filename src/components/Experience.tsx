@@ -15,6 +15,16 @@ export const Experience = () => {
                 </li>
                 <li className="mb-10 ms-4">
                     <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+                    <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">March 2024</time>
+                    <div className={"flex space-x-1 items-baseline"}>
+                        <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Published web project,</h3>
+                        <p className="text-md font-normal italic text-gray-900 dark:text-gray-300">assemblytoolkit.com</p>
+                    </div>
+                    <p className=" font-normal text-gray-500 dark:text-gray-400">Public website to help students by providing commonly used conversions in computer organization.</p>
+                    <p className=" font-bold text-gray-500 dark:text-gray-400 language-gradient">Next, React, Computer Organization</p>
+                </li>
+                <li className="mb-10 ms-4">
+                    <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
                     <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">July 2023 - Present</time>
                     <div className={"flex space-x-1 items-baseline"}>
                         <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Android Developer Researcher,</h3>
