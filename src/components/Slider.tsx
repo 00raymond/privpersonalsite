@@ -9,10 +9,6 @@ let allTabs = [
         id: "experience",
         name: "timeline",
     },
-    {
-        id: "projects",
-        name: "projects",
-    },
     // {
     //     id: "skills",
     //     name: "skills",

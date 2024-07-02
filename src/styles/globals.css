@@ -39,3 +39,8 @@ body {
   background-clip: text;
   color: transparent;
 }
+
+/* remove the scroll bar entirely across all pages */
+::-webkit-scrollbar {
+  display: none;
+}
