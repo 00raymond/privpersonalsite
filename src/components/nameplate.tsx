@@ -5,7 +5,7 @@ import Image from "next/image";
 export const Nameplate = () => {
 
     return (
-        <div className="to-slate-950 relative overflow-hidden rounded-xl border border-slate-800 bg-gradient-to-r from-slate-900 px-8 py-16 shadow-2xl">
+        <div className=" relative overflow-hidden rounded-xl border border-slate-800 bg-gradient-to-l from-slate-700 to-slate-800 px-8 py-16 shadow-2xl">
             <div className="pointer-events-none absolute -inset-px opacity-0 transition duration-300"/>
                 <div className={"flex space-x-3 items-center justify-center"}>
                     <Image src={me} alt="me" className="w-48 h-48 rounded-xl shadow-lg border-2 border-slate-800"/>

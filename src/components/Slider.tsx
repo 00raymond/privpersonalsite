@@ -7,12 +7,12 @@ let allTabs = [
     },
     {
         id: "experience",
-        name: "timeline",
+        name: "experience",
     },
-    // {
-    //     id: "skills",
-    //     name: "skills",
-    // },
+    {
+        id: "projects",
+        name: "projects",
+    },
 ];
 
 interface SlidingTabBarProps {

@@ -19,7 +19,7 @@ export default function Home() {
   ];
 
   return (
-      <div className="App bg-black grid-background w-screen h-screen overflow-x-hidden">
+      <div className="App bg-gray-600 grid-background w-screen h-screen overflow-x-hidden">
         <div className={"flex items-center relative top-16"}>
           <SlidingTabBar activeTabIndex={tabIndex} setActiveTabIndex={setTabIndex} />
         </div>
