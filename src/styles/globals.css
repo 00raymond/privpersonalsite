@@ -41,7 +41,7 @@ body {
 }
 
 .desc-gradient {
-  background: linear-gradient(to right, mediumpurple, orangered);
+  background: linear-gradient(to right, mediumpurple, mediumpurple);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;

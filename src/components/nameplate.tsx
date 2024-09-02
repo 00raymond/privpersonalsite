@@ -1,4 +1,4 @@
-import me from "@/assets/me.jpg";
+import me from "@/assets/me.png";
 import resume from "@/assets/Raymond_House_resume.pdf";
 import Image from "next/image";
 
@@ -16,6 +16,7 @@ export const Nameplate = () => {
                         <div className={"text-xl mt-2"}>
                             <p>software developer</p>
                             <p>uc irvine 2025</p>
+                            <p>unibo fall 2024</p>
                         </div>
                         <a
                             href={resume} target="_blank" rel="noopener noreferrer"
