@@ -201,7 +201,7 @@ export const Projects = () => {
                     </div>
                     <div>
                         <button className={"text-xl"}
-                                onClick={() => window.open("https://github.com/00raymond/personalsite", "_blank")}
+                                onClick={() => window.open("https://github.com/00raymond/privpersonalsite", "_blank")}
                         >
                             <div className={"relative w-full h-full"}
                                  onMouseEnter={() => handleHover("website")}
